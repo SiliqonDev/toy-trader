@@ -1,3 +1,34 @@
 [gd_scene format=3 uid="uid://c52e6mhfde3oh"]
 
+[ext_resource type="Script" uid="uid://d4hr323xkfype" path="res://src/scripts/core/game.gd" id="1_3rtjt"]
+[ext_resource type="Script" uid="uid://c1mlrbilhpvph" path="res://src/scripts/core/player.gd" id="2_covw0"]
+[ext_resource type="Script" uid="uid://dsidvslayjub0" path="res://src/scripts/managers/pause_manager.gd" id="2_yufto"]
+[ext_resource type="Script" uid="uid://dbxo2nnmfhu2g" path="res://src/scripts/managers/input_manager.gd" id="3_yufto"]
+
 [node name="Game" type="Node" unique_id=1330968598]
+script = ExtResource("1_3rtjt")
+
+[node name="Managers" type="Node" parent="." unique_id=1116092364]
+
+[node name="PauseManager" type="Node" parent="Managers" unique_id=462695065]
+script = ExtResource("2_yufto")
+
+[node name="InputManager" type="Node" parent="Managers" unique_id=678246222]
+script = ExtResource("3_yufto")
+
+[node name="Player" type="Node" parent="." unique_id=1093981436]
+script = ExtResource("2_covw0")
+
+[node name="WorldRoot" type="Node" parent="." unique_id=1099983211]
+
+[node name="EntityRoot" type="Node" parent="." unique_id=146993321]
+
+[node name="UI" type="Control" parent="." unique_id=1048373767]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
