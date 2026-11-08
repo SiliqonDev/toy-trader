@@ -19,6 +19,7 @@ config/icon="res://assets/icon.svg"
 [autoload]
 
 SignalBus="*uid://brxhhyw21toos"
+StockProperties="*uid://cb72mue40bniy"
 
 [display]
 

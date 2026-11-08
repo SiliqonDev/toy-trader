@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://c1mlrbilhpvph" path="res://src/scripts/core/player.gd" id="2_covw0"]
 [ext_resource type="Script" uid="uid://dsidvslayjub0" path="res://src/scripts/managers/pause_manager.gd" id="2_yufto"]
 [ext_resource type="Script" uid="uid://dbxo2nnmfhu2g" path="res://src/scripts/managers/input_manager.gd" id="3_yufto"]
+[ext_resource type="Script" uid="uid://bodx1euuei2eu" path="res://src/scripts/managers/market_manager.gd" id="4_276xm"]
 
 [node name="Game" type="Node" unique_id=1330968598]
 script = ExtResource("1_3rtjt")
@@ -15,6 +16,9 @@ script = ExtResource("2_yufto")
 
 [node name="InputManager" type="Node" parent="Managers" unique_id=678246222]
 script = ExtResource("3_yufto")
+
+[node name="MarketManager" type="Node" parent="Managers" unique_id=173102379]
+script = ExtResource("4_276xm")
 
 [node name="Player" type="Node" parent="." unique_id=1093981436]
 script = ExtResource("2_covw0")

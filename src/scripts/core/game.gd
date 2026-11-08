@@ -4,6 +4,7 @@ extends Node
 @onready var player: Player = $Player
 @onready var pauseManager : PauseManager = $Managers/PauseManager
 @onready var inputManager : InputManager = $Managers/InputManager
+@onready var marketManager : MarketManager = $Managers/MarketManager
 
 func _ready() -> void:
     _initialize_managers()
@@ -13,6 +14,8 @@ func _initialize_managers() -> void:
     pauseManager.initialize()
     
     inputManager.initialize()
+
+    marketManager.initialize()
 
 func _load_game() -> void:
     # TODO: save loading
